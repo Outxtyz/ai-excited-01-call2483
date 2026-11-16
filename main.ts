@@ -1,10 +1,16 @@
-import { copyFileSync, mkdirSync } from 'node:fs';
-import { join, resolve } from 'node:path';
+import { copyFileSync, existsSync, mkdirSync } from 'node:fs';
+import { dirname, join, resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-// The entry is a pre-made image; this program just delivers it where the
-// harness expects it, byte for byte.
-const source = new URL('./entry.png', import.meta.url);
-const outDir = resolve(process.env.MAKEFUN_OUTPUT_DIR ?? '/output');
+// The artwork is already finished and bundled as entry.png next to this
+// file. All this program does is place an exact copy of it where the
+// harness will pick it up, without touching a single byte of the image.
+const here = dirname(fileURLToPath(import.meta.url));
+const image = join(here, 'entry.png');
+const destinationDir = resolve(process.env.MAKEFUN_OUTPUT_DIR ?? '/output');
+const destination = join(destinationDir, 'entry.png');
 
-mkdirSync(outDir, { recursive: true });
-copyFileSync(source, join(outDir, 'entry.png'));
+if (!existsSync(destinationDir)) {
+  mkdirSync(destinationDir, { recursive: true });
+}
+copyFileSync(image, destination);
