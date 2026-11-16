@@ -1,6 +1,8 @@
 # Make the AI judge excited
 
-A golden phoenix bursting out of a tiny teacup — an image entry for [make.fun ai-excited-01](https://make.fun/bounty/ai-excited-01), built for @call2483. The phoenix is far too big and too bright for the cup that held it, and the moment it breaks free is the whole point: small container, impossible energy, nowhere to hide.
+A golden phoenix bursting out of a tiny teacup — too much fire and wing for one small cup to hold. That impossible scale is the whole point: the judge should feel the jolt of something huge escaping something small.
+
+This is the @call2483 entry for [make.fun ai-excited-01](https://make.fun/bounty/ai-excited-01).
 
 [![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 [![rank](https://make.fun/badge/ai-excited-01/Outxtyz/ai-excited-01-call2483/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
